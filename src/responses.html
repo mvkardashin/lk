@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@include("html/head.html", { "title": "Отклики" })
+
+	<body>
+		<div class="page-wrapper">
+			@include("html/header.html", {"current": "requests"})
+
+			<div class="main">
+				<div class="container2">
+					<div class="main__inner">
+						<div class="main__content">
+							@include("html/breadcrumb.html")
+							<div class="d-flex align-items-center flex-wrap mb-4 column-gap-4 row-gap-2">
+								<h1>Отклики по запросу №68810</h1>
+							</div>
+
+							<div class="alert alert-light" role="alert">Выбранные репетиторы не ответили на ваш запрос, но откликнулись другие репетиторы, соответствующие параметрам вашего запроса. Посмотрите их анкеты, а потом выберите понравившуюся кандидатуру.</div>
+
+							<div class="card mb-2">
+								<div class="card-header d-flex flex-wrap align-items-center justify-content-between">
+									<div class="fs-5 fw-bold">Отклик #111111</div>
+								</div>
+								<div class="card-body">
+									<div class="d-flex align-items-center flex-wrap gap-1">
+										<div class="fs-5 fw-bold">Репетитор: </div>
+										 <div class="fs-5">Имяреков Имярек Имярекович</div>
+									</div>
+									<div class="d-flex align-items-center flex-wrap gap-1 mt-2 mb-2">
+										<a href="#" class="btn btn-info">Смотреть анкету на сайте</a>
+								   </div>
+									<div class="d-flex align-items-center flex-wrap gap-1">
+										<div class="fs-5 fw-bold">Предложение репетитора: </div>
+								   </div>
+								   <div class="card p-2 mt-2">
+									<div class="alert alert-warning" role="alert">Неполное соответствие отклика запросу</div>
+										<div class="d-flex align-items-center flex-wrap gap-1">
+											<span class="fw-bold">Предмет:</span>
+											<span>Немецкий язык</span>
+										</div>
+										<div class="d-flex align-items-center flex-wrap gap-1">
+											<span class="fw-bold">Для кого:</span>
+											<span>Взрослые кроме абитуриентов и студентов</span>
+										</div>
+										<div class="d-flex align-items-center flex-wrap gap-1">
+											<span class="fw-bold">Сколько учеников:</span>
+											<span>Индивидуально</span>
+										</div>
+										<div class="d-flex align-items-center flex-wrap gap-1">
+											<span class="fw-bold">Где:</span>
+											<span>У репетитора/ У ученика/ Дистанционно</span>
+										</div>
+										<div class="d-flex align-items-center flex-wrap gap-1">
+											<span class="fw-bold">Продолжительность занятия:</span>
+											<span>90 мин.</span>
+										</div>
+										<div class="d-flex align-items-center flex-wrap gap-1">
+											<span class="fw-bold">Стоимость одного занятия:</span>
+											<span>1000 р</span>
+										</div>
+										
+								</div>
+								<div class="d-flex align-items-center flex-wrap gap-1 mt-2 mb-2">
+									<span class="fw-bold">Выберите отклик до:</span>
+									<span>05.07.2024 в 19:42:35</span>
+								</div>
+								<div class="d-flex align-items-center flex-wrap gap-1 mt-2 mb-2">
+									<a href="#" class="btn btn-primary">Выбрать отклик</a>
+							   </div>
+								</div>
+							</div>
+							
+							
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			@include("html/footer.html", {"current": "requests"})
+		</div>
+	</body>
+</html>

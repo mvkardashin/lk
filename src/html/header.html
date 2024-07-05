@@ -1,0 +1,60 @@
+<header class="header bg-body-tertiary">
+	<div class="header__top border-bottom">
+		<div class="container2">
+			<div class="header__inner d-flex align-items-center mt-2 mb-2 mt-sm-3 mb-sm-3">
+				<a href="./requests.html" class="d-flex me-auto">
+					<img src="./img/logo.png" width="250" height="28" alt="" class="d-flex" />
+				</a>
+				<div class="hstack gap-2 d-none d-md-block">
+			
+					<a href="#" class="btn btn-danger">Выйти</a>
+				</div>
+				<div class="dropdown d-block d-md-none mobile-dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<div class="burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</button>
+					<ul class="dropdown-menu">
+						
+						<li><a class="btn btn-danger" href="#">Выйти</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="navigation bg-body-tertiary shadow-sm">
+	<div class="container2">
+		<ul class="nav nav-pills justify-content-between gap-2">
+			<li class="nav-item flex-grow-1">
+				<a href="./requests.html" class="nav-link text-center @if(current !== 'requests'){link-body-emphasis} @if(current === 'requests'){active}" aria-current="page">
+					<i class="bi bi-card-text fs-5 me-2"></i>
+					<span class="fs-4">Ваши запросы</span>
+				</a>
+			</li>
+			<li class="nav-item flex-grow-1">
+				<a href="./teachers.html" class="nav-link text-center @if(current !== 'teachers'){link-body-emphasis} @if(current === 'teachers'){active}">
+					<i class="bi bi-people-fill fs-5 me-2"></i>
+					<span class="fs-4">Ваши репетиторы</span>
+				</a>
+			</li>
+			<li class="nav-item flex-grow-1">
+				<a href="./feedback.html" class="nav-link text-center @if(current !== 'feedback'){link-body-emphasis} @if(current === 'feedback'){active}">
+					<i class="bi bi-pencil-fill fs-5 me-2"></i>
+					<span class="fs-4">Обратная связь</span>
+				</a>
+			</li>
+			<li class="nav-item flex-grow-1">
+				<a href="./settings.html" class="nav-link text-center @if(current !== 'settings'){link-body-emphasis} @if(current === 'settings'){active}">
+					<i class="bi bi-gear-fill fs-5 me-2"></i>
+					<span class="fs-4">Ваши данные</span>
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+</div>

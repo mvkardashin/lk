@@ -1,0 +1,15 @@
+.faq {
+	width: 400px;
+	border-radius: 10px;
+	flex-shrink: 0;
+	position: sticky;
+	top: 86px;
+
+	@media screen and (max-width: 1200px) {
+		width: 370px;
+	}
+
+	@media screen and (max-width: 992px) {
+		display: none !important;
+	}
+}

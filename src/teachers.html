@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include("html/head.html", { "title": "Ваши репетиторы" })
+
+<body>
+	<div class="page-wrapper">
+		@include("html/header.html", {"current": "teachers"})
+
+		<div class="main">
+			<div class="container2">
+				<div class="main__inner">
+					<div class="main__content">
+						@include("html/breadcrumb.html")
+						<div class="d-flex align-items-center flex-wrap mb-4 column-gap-4 row-gap-2">
+							<h1>Ваши репетиторы</h1>
+						</div>
+						<div class="mb-5">
+							<a href="./link-to-wizard" class="btn btn-primary">Найти репетитора</a>
+						</div>
+
+						<div class="row row-cols-1">
+							<div class="col">
+								<div class="card mb-3">
+									<div class="d-block d-sm-flex card-form">
+										<div class="card-form__preview ">
+											<img  src="./img/test.jpg" alt="" />
+										</div>
+										<div
+											class="card-body flex-fill d-flex flex-wrap align-items-start justify-content-start column-gap-4 row-gap-3">
+											<div class="flex-column">
+												<h4 class="card-title">Имяреков Имярек Имярекович</h4>
+												<div class="d-flex align-items-center gap-1">
+													<span class="fw-bold">Предмет:</span>
+													<span>Английский язык</span>
+												</div>
+												<div class="d-flex align-items-center gap-1">
+													<span class="fw-bold">По заказу:</span>
+													<a href="#">45348</a>
+												</div>
+												<div class="fs-5 fw-bold mt-2 mb-2">Детали заказа:</div>
+												<div class="card p-2">
+													<div class="d-flex align-items-center flex-wrap gap-1">
+														<span class="fw-bold">Место проведения занятий:</span>
+														<span>У ученика</span>
+													</div>
+													<div class="d-flex align-items-center flex-wrap gap-1">
+														<span class="fw-bold">Возраст:</span>
+														<span>Школьники с 10 по 11 класс, студенты колледжей и
+															техникумов, абитуриенты</span>
+													</div>
+													<div class="d-flex align-items-center flex-wrap gap-1">
+														<span class="fw-bold">Организованная форма:</span>
+														<span>Индивидуально</span>
+													</div>
+													<div class="d-flex align-items-center flex-wrap gap-1">
+														<span class="fw-bold">Продолжительность занятия:</span>
+														<span>60 минут</span>
+													</div>
+													<div class="d-flex align-items-center flex-wrap gap-1">
+														<span class="fw-bold">Регион:</span>
+														<span>Москва</span>
+													</div>
+													<div class="d-flex align-items-center flex-wrap gap-1">
+														<span class="fw-bold">Стоимость занятия:</span>
+														<span>1 000Р</span>
+													</div>
+												</div>
+												<div class="fs-5 fw-bold mt-2 mb-2">Контактные данные:</div>
+												<div class="card p-2">
+													<div class="d-flex align-items-center flex-wrap gap-1">
+														<span class="fw-bold">Телефон:</span>
+														<span>+ 7 (900) 000 00 00</span>
+													</div>
+													<div class="d-flex align-items-center flex-wrap gap-1">
+														<span class="fw-bold">E-mail:</span>
+														<span>mail@mail.ru</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class=" flex-wrap align-items-start gap-2 pt-2">
+											<a href="./form.html" class="btn btn-primary m-2">Смотреть анкету</a>
+											<a href="./review.html" class="btn btn-info m-2">Оставить отзыв</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<!-- @include("html/faq.html") -->
+				</div>
+			</div>
+		</div>
+
+		@include("html/footer.html", {"current": "teachers"})
+	</div>
+</body>
+
+</html>

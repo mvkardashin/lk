@@ -1,0 +1,10 @@
+// Вспомогательные стили
+@import './helpers/fonts.scss';
+@import './helpers/mixins.scss';
+@import './helpers/custom.scss';
+
+// Базовые стили
+@import './base.scss';
+
+// Стили блоков
+@import './components/*.scss';

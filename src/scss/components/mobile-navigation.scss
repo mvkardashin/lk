@@ -1,0 +1,45 @@
+.mobile-navigation {
+	display: none;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+
+	@media screen and (max-width: 767px) {
+		display: flex;
+	}
+
+	&__item {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 2px;
+		text-decoration: none;
+		padding: 10px;
+
+		i {
+			line-height: 1;
+		}
+
+		span {
+			font-size: 14px;
+			color: #222;
+		}
+
+		&.active {
+			background-color: $primary;
+
+			i {
+				color: #fff;
+			}
+
+			span {
+				color: #fff;
+			}
+		}
+	}
+}

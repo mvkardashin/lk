@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@include("html/head.html", { "title": "Обратная связь" })
+
+	<body>
+		<div class="page-wrapper">
+			@include("html/header.html", {"current": "feedback"})
+
+			<div class="main">
+				<div class="container2">
+					<div class="main__inner">
+						<div class="main__content">
+							@include("html/breadcrumb.html")
+							<div class="d-flex align-items-center flex-wrap mb-4 column-gap-4 row-gap-2">
+								<h1>Форма обратной связи</h1>
+							</div>
+							<p>Типовая форма обратной связи</p>
+							<button type="button" class="btn btn-primary mt-2">Написать</button>
+							
+						</div>
+
+						
+						<!-- @include("html/faq.html") -->
+					</div>
+				</div>
+			</div>
+
+			@include("html/footer.html", {"current": "feedback"})
+		</div>
+	</body>
+</html>

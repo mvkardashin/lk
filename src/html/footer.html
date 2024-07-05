@@ -1,0 +1,66 @@
+<!-- Footer -->
+<footer id="footer" class="footer bg-body-tertiary border-top">
+	<div class="container2">
+		<div class="d-flex flex-wrap justify-content-evenly gap-8">
+		
+
+			<div class="footer__nav-item">
+				<h3 class="footer__nav-title">Пользователям</h3>
+				<ul class="footer__nav-list">
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+					
+				</ul>
+			</div>
+
+			<div class="footer__nav-item">
+				<h3 class="footer__nav-title">Мы в соц. сетях</h3>
+				<ul class="socials">
+					<li class="socials__item">
+						<a href="#">
+							<img src="./img/social-zen.svg" alt="" />
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="#">
+							<img src="./img/social-vk.svg" alt="" />
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="#">
+							<img src="./img/social-tg.svg" alt="" />
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="#">
+							<img src="./img/social-youtube.svg" alt="" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- End Footer -->
+
+<div class="mobile-navigation bg-body-tertiary border-top">
+	<a href="./requests.html" class="mobile-navigation__item @if(current === 'requests'){active}">
+		<i class="bi bi-card-text fs-2"></i>
+		<span class="fw-medium">Ваши запросы</span>
+	</a>
+	<a href="./teachers.html" class="mobile-navigation__item @if(current === 'teachers'){active}">
+		<i class="bi bi-people-fill fs-2"></i>
+		<span class="fw-medium">Ваши репетиторы</span>
+	</a>
+	<a href="./feedback.html" class="mobile-navigation__item @if(current === 'feedback'){active}">
+		<i class="bi bi-pencil-fill fs-2"></i>
+		<span class="fw-medium">Обратная связь</span>
+	</a>
+	
+	<a href="./settings.html" class="mobile-navigation__item @if(current === 'settings'){active}">
+		<i class="bi bi-gear-fill fs-2"></i>
+		<span class="fw-medium">Ваши данные</span>
+	</a>
+</div>
+
+<script src="./js/build.js"></script>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Настройки</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header bg-body-tertiary">
+            <div class="header__top border-bottom">
+                <div class="container2">
+                    <div class="header__inner d-flex align-items-center mt-2 mb-2 mt-sm-3 mb-sm-3">
+                        <a href="./requests.html" class="d-flex me-auto">
+                            <img src="./img/logo.png" width="250" height="28" alt="" class="d-flex" />
+                        </a>
+                        <div class="hstack gap-2 d-none d-md-block">
+
+                            <a href="#" class="btn btn-danger">Выйти</a>
+                        </div>
+                        <div class="dropdown d-block d-md-none mobile-dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu">
+
+                                <li><a class="btn btn-danger" href="#">Выйти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="navigation bg-body-tertiary shadow-sm">
+            <div class="container2">
+                <ul class="nav nav-pills justify-content-between gap-2">
+                    <li class="nav-item flex-grow-1">
+                        <a href="./requests.html" class="nav-link text-center link-body-emphasis " aria-current="page">
+                            <i class="bi bi-card-text fs-5 me-2"></i>
+                            <span class="fs-4">Ваши запросы</span>
+                        </a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a href="./teachers.html" class="nav-link text-center link-body-emphasis ">
+                            <i class="bi bi-people-fill fs-5 me-2"></i>
+                            <span class="fs-4">Ваши репетиторы</span>
+                        </a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a href="./feedback.html" class="nav-link text-center link-body-emphasis ">
+                            <i class="bi bi-pencil-fill fs-5 me-2"></i>
+                            <span class="fs-4">Обратная связь</span>
+                        </a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a href="./settings.html" class="nav-link text-center  active">
+                            <i class="bi bi-gear-fill fs-5 me-2"></i>
+                            <span class="fs-4">Ваши данные</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="container2">
+                <div class="main__inner">
+                    <div class="main__content">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Личный кабинет</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Ваши запросы</li>
+                            </ol>
+                        </nav>
+
+                        <div class="d-flex align-items-center flex-wrap mb-4 column-gap-4 row-gap-2">
+                            <h1>Ваши данные</h1>
+                        </div>
+
+                        <div class="list-group">
+
+                            <div class="list-group-item p-3">
+                                <h5 class="mb-1 fw-bolder">Изменение пароля</h5>
+                                <button type="button" class="btn btn-primary mt-2">Изменить</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer bg-body-tertiary border-top">
+            <div class="container2">
+                <div class="d-flex flex-wrap justify-content-evenly gap-8">
+
+                    <div class="footer__nav-item">
+                        <h3 class="footer__nav-title">Пользователям</h3>
+                        <ul class="footer__nav-list">
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-item">
+                        <h3 class="footer__nav-title">Мы в соц. сетях</h3>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="#">
+                                    <img src="./img/social-zen.svg" alt="" />
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#">
+                                    <img src="./img/social-vk.svg" alt="" />
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#">
+                                    <img src="./img/social-tg.svg" alt="" />
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#">
+                                    <img src="./img/social-youtube.svg" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <div class="mobile-navigation bg-body-tertiary border-top">
+            <a href="./requests.html" class="mobile-navigation__item ">
+                <i class="bi bi-card-text fs-2"></i>
+                <span class="fw-medium">Ваши запросы</span>
+            </a>
+            <a href="./teachers.html" class="mobile-navigation__item ">
+                <i class="bi bi-people-fill fs-2"></i>
+                <span class="fw-medium">Ваши репетиторы</span>
+            </a>
+            <a href="./feedback.html" class="mobile-navigation__item ">
+                <i class="bi bi-pencil-fill fs-2"></i>
+                <span class="fw-medium">Обратная связь</span>
+            </a>
+
+            <a href="./settings.html" class="mobile-navigation__item active">
+                <i class="bi bi-gear-fill fs-2"></i>
+                <span class="fw-medium">Ваши данные</span>
+            </a>
+        </div>
+
+        <script src="./js/build.js"></script>
+
+    </div>
+</body>
+
+</html>

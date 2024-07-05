@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@include("html/head.html", { "title": "Настройки" })
+
+	<body>
+		<div class="page-wrapper">
+			@include("html/header.html", {"current": "settings"})
+
+			<div class="main">
+				<div class="container2">
+					<div class="main__inner">
+						<div class="main__content">
+							@include("html/breadcrumb.html")
+							<div class="d-flex align-items-center flex-wrap mb-4 column-gap-4 row-gap-2">
+								<h1>Ваши данные</h1>
+							</div>
+
+							<div class="list-group">
+								
+								
+								<div class="list-group-item p-3">
+									<h5 class="mb-1 fw-bolder">Изменение пароля</h5>
+									<button type="button" class="btn btn-primary mt-2">Изменить</button>
+								</div>
+								
+							</div>
+						</div>
+
+						
+
+						<!-- @include("html/faq.html") -->
+					</div>
+				</div>
+			</div>
+
+			@include("html/footer.html", {"current": "settings"})
+		</div>
+	</body>
+</html>
